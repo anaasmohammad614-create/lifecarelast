@@ -27,6 +27,7 @@ const stats = [
   { icon: Stethoscope, value: "7+", label: "Experienced Doctors" },
   { icon: Award, value: "15+ yrs", label: "Trusted Service" },
   { icon: HeartPulse, value: "Free", label: "Home Sample Collection" },
+  { icon: Pill, value: "Free", label: "Home Delivery" },
 ];
 
 
@@ -97,7 +98,7 @@ function Home() {
               </button>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl">
+            <div className="mt-12 grid grid-cols-2 gap-3 max-w-4xl sm:grid-cols-3 md:grid-cols-5">
               {stats.map((s) => (
                 <div key={s.label} className="glass rounded-2xl p-4">
                   <s.icon className="h-5 w-5 text-white/80" />
