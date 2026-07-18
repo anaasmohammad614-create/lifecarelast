@@ -39,14 +39,9 @@ export function ContactChoiceDialog() {
   if (!purpose) return null;
   const info = NUMBERS[purpose];
   const close = () => setPurpose(null);
-  const normalWhatsAppUrl = `https://api.whatsapp.com/send?phone=${info.wa}`;
-  const businessWhatsAppUrl = `https://business.whatsapp.com/send?phone=${info.businessWa}`;
-
-  const handleWhatsAppClick = (url: string) => {
-    close();
-    window.open(url, "_blank", "noopener,noreferrer");
-    window.location.assign(url);
-  };
+  const normalizeWhatsAppNumber = (value: string) => value.replace(/\D/g, "");
+  const normalWhatsAppUrl = `https://wa.me/${normalizeWhatsAppNumber(info.wa)}`;
+  const businessWhatsAppUrl = `https://wa.me/${normalizeWhatsAppNumber(info.businessWa)}`;
 
   return (
     <div className="fixed inset-0 z-[100] grid place-items-center bg-black/50 backdrop-blur-sm p-4" onClick={close}>
@@ -68,20 +63,18 @@ export function ContactChoiceDialog() {
         <div className="mt-6 grid gap-3">
           <a
             href={normalWhatsAppUrl}
-            onClick={(e) => {
-              e.preventDefault();
-              handleWhatsAppClick(normalWhatsAppUrl);
-            }}
+            target="_self"
+            rel="noopener noreferrer"
+            onClick={close}
             className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:opacity-95"
           >
             <MessageCircle className="h-4 w-4" /> Open WhatsApp
           </a>
           <a
             href={businessWhatsAppUrl}
-            onClick={(e) => {
-              e.preventDefault();
-              handleWhatsAppClick(businessWhatsAppUrl);
-            }}
+            target="_self"
+            rel="noopener noreferrer"
+            onClick={close}
             className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[color:var(--teal)] px-4 py-3 text-sm font-semibold text-white transition hover:opacity-95"
           >
             <MessageCircle className="h-4 w-4" /> Open WhatsApp Business
