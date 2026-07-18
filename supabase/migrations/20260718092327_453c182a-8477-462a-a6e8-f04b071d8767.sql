@@ -1,0 +1,1 @@
+UPDATE public.departments SET slug='neurosurgery', name='Neurosurgeon', description='Neurosurgical consultation and management of brain, spine, and nervous-system conditions by experienced neurosurgeons.' WHERE slug='cardiology';

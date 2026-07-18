@@ -1,0 +1,257 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Life Care Medical — clinical trust: deep teal + navy, warm gold accent */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-deep: var(--brand-deep);
+  --color-gold: var(--gold);
+  --color-mint: var(--mint);
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.875rem;
+
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.28 0.05 200);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.28 0.05 200);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.28 0.05 200);
+
+  --primary: oklch(0.38 0.055 200);
+  --primary-foreground: oklch(1 0 0);
+
+  --secondary: oklch(0.96 0.015 200);
+  --secondary-foreground: oklch(0.22 0.05 220);
+
+  --muted: oklch(0.96 0.01 220);
+  --muted-foreground: oklch(0.5 0.02 230);
+
+  --accent: oklch(0.94 0.03 190);
+  --accent-foreground: oklch(0.22 0.05 220);
+
+  --destructive: oklch(0.58 0.22 25);
+  --destructive-foreground: oklch(0.99 0.005 200);
+
+  --border: oklch(0.92 0.015 210);
+  --input: oklch(0.94 0.015 210);
+  --ring: oklch(0.55 0.1 200);
+
+  --teal: #0F545C;
+  --teal-hover: #0d474e;
+  --brand: oklch(0.38 0.055 200);
+  --brand-foreground: oklch(1 0 0);
+  --brand-deep: #0F545C;
+  --gold: oklch(0.78 0.13 78);
+  --mint: oklch(0.88 0.08 180);
+
+  --gradient-hero: linear-gradient(135deg,
+    oklch(0.26 0.06 230) 0%,
+    oklch(0.38 0.09 210) 45%,
+    oklch(0.5 0.11 195) 100%);
+  --gradient-aurora: radial-gradient(circle at 20% 30%, oklch(0.5 0.11 195 / 0.35), transparent 60%),
+                     radial-gradient(circle at 80% 20%, oklch(0.78 0.13 78 / 0.25), transparent 55%),
+                     radial-gradient(circle at 50% 90%, oklch(0.88 0.08 180 / 0.35), transparent 60%);
+  --gradient-soft: linear-gradient(180deg, oklch(0.99 0.005 200), oklch(0.96 0.02 190));
+
+  --shadow-soft: 0 1px 2px oklch(0.26 0.06 230 / 0.04), 0 8px 24px oklch(0.26 0.06 230 / 0.08);
+  --shadow-glow: 0 20px 60px -20px oklch(0.5 0.11 195 / 0.45);
+  --shadow-lift: 0 20px 40px -18px oklch(0.26 0.06 230 / 0.28);
+}
+
+.dark {
+  --background: oklch(0.15 0.03 230);
+  --foreground: oklch(0.96 0.01 200);
+  --card: oklch(0.2 0.035 230);
+  --card-foreground: oklch(0.96 0.01 200);
+  --popover: oklch(0.2 0.035 230);
+  --popover-foreground: oklch(0.96 0.01 200);
+  --primary: oklch(0.72 0.11 190);
+  --primary-foreground: oklch(0.15 0.03 230);
+  --secondary: oklch(0.26 0.04 230);
+  --secondary-foreground: oklch(0.96 0.01 200);
+  --muted: oklch(0.26 0.04 230);
+  --muted-foreground: oklch(0.7 0.02 210);
+  --accent: oklch(0.32 0.05 210);
+  --accent-foreground: oklch(0.96 0.01 200);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.96 0.01 200);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.72 0.11 190);
+  --brand: oklch(0.72 0.11 190);
+  --brand-foreground: oklch(0.15 0.03 230);
+  --brand-deep: oklch(0.15 0.03 230);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { font-family: var(--font-sans); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, .font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
+  img { color: transparent; }
+
+  /* Hide native cursor when custom stethoscope cursor is active (desktop only) */
+  @media (hover: hover) and (pointer: fine) {
+    html.has-custom-cursor,
+    html.has-custom-cursor * { cursor: none !important; }
+    /* Preserve caret for text inputs so users can still type */
+    html.has-custom-cursor input,
+    html.has-custom-cursor textarea,
+    html.has-custom-cursor [contenteditable="true"] { cursor: text !important; }
+  }
+}
+
+@utility gradient-hero { background-image: var(--gradient-hero); }
+@utility gradient-aurora { background-image: var(--gradient-aurora); }
+@utility gradient-soft { background-image: var(--gradient-soft); }
+@utility shadow-soft { box-shadow: var(--shadow-soft); }
+@utility shadow-glow { box-shadow: var(--shadow-glow); }
+@utility shadow-lift { box-shadow: var(--shadow-lift); }
+@utility glass {
+  background: color-mix(in oklab, white 65%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in oklab, white 40%, transparent);
+}
+@utility glass-dark {
+  background: color-mix(in oklab, oklch(0.15 0.03 230) 55%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in oklab, white 15%, transparent);
+}
+@utility card-lift {
+  transition: transform 400ms cubic-bezier(.2,.7,.2,1), box-shadow 400ms ease, border-color 400ms ease;
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lift);
+    border-color: color-mix(in oklab, var(--color-primary) 30%, var(--color-border));
+  }
+}
+@utility img-zoom {
+  overflow: hidden;
+  & > img { transition: transform 900ms cubic-bezier(.2,.7,.2,1), filter 600ms ease; }
+  &:hover > img { transform: scale(1.08); filter: saturate(1.1); }
+}
+@utility tilt {
+  transition: transform 400ms cubic-bezier(.2,.7,.2,1);
+  transform-style: preserve-3d;
+  &:hover { transform: perspective(900px) rotateX(2deg) rotateY(-3deg) translateY(-2px); }
+}
+
+/* Teal / white section tones */
+@utility section-teal {
+  background-color: var(--teal);
+  color: #ffffff;
+}
+@utility section-white {
+  background-color: #ffffff;
+  color: var(--teal);
+}
+/* Headings inherit the section tone; explicit text-* utilities still win. */
+.section-teal :where(h1,h2,h3,h4,h5,h6):not([class*="text-"]) { color: #ffffff; }
+.section-white :where(h1,h2,h3,h4,h5,h6):not([class*="text-"]) { color: var(--teal); }
+
+
+/* Teal button with hover invert */
+@utility btn-teal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  background-color: var(--teal);
+  color: #ffffff;
+  border: 1px solid var(--teal);
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+  &:hover { background-color: #ffffff; color: var(--teal); }
+}
+@utility btn-teal-invert {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: var(--teal);
+  border: 1px solid #ffffff;
+  transition: background-color .2s ease, color .2s ease;
+  &:hover { background-color: var(--teal); color: #ffffff; border-color: #ffffff; }
+}
+
+
+@keyframes ecg {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes float-slow {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(14px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-ring {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.9; }
+  100% { transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
+}
+@keyframes aurora-shift {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-float { animation: float-slow 6s ease-in-out infinite; }
+.animate-ecg { stroke-dasharray: 1000; animation: ecg 4s ease-out infinite; }
+.animate-fade-up { animation: fade-up .7s cubic-bezier(.2,.7,.2,1) both; }
+
+/* Stethoscope cursor pulse on click */
+.stetho-ring.pulse { animation: pulse-ring .55s ease-out; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float, .animate-ecg, .animate-fade-up { animation: none !important; }
+  .card-lift, .img-zoom > img, .tilt { transition: none !important; }
+}
