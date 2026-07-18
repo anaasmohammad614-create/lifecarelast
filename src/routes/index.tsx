@@ -85,14 +85,14 @@ function Home() {
               Trusted doctors, advanced diagnostics, laboratory services, pharmacy and compassionate care —
               all under one roof at Life Care Medical Polyclinic and Laboratory.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <button type="button" onClick={() => openContactChoice("appointment")} className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-deep shadow-lift hover:opacity-95">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <button type="button" onClick={() => openContactChoice("appointment")} className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-deep shadow-lift hover:opacity-95 sm:w-auto">
                 <Calendar className="h-4 w-4" /> Book Appointment
               </button>
-              <button type="button" onClick={() => openContactChoice("appointment")} className="inline-flex items-center gap-2 rounded-full glass px-5 py-3 text-sm font-semibold text-white hover:bg-white/20">
+              <button type="button" onClick={() => openContactChoice("appointment")} className="inline-flex w-full items-center justify-center gap-2 rounded-full glass px-5 py-3 text-sm font-semibold text-white hover:bg-white/20 sm:w-auto">
                 <Phone className="h-4 w-4" /> Call now
               </button>
-              <button type="button" onClick={() => openContactChoice("pharmacy")} className="inline-flex items-center gap-2 rounded-full glass px-5 py-3 text-sm font-semibold text-white hover:bg-white/20">
+              <button type="button" onClick={() => openContactChoice("pharmacy")} className="inline-flex w-full items-center justify-center gap-2 rounded-full glass px-5 py-3 text-sm font-semibold text-white hover:bg-white/20 sm:w-auto">
                 <MessageCircle className="h-4 w-4" /> Order Medicine
               </button>
             </div>
@@ -108,9 +108,9 @@ function Home() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="relative hidden lg:block">
-            <div className="relative rounded-[2rem] overflow-hidden shadow-lift ring-1 ring-white/20">
-              <img src={media.heroTeam} alt="Life Care medical team in a modern hospital" width={1600} height={1200} className="h-[520px] w-full object-cover" />
+          <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="relative mx-auto w-full max-w-2xl lg:max-w-none">
+            <div className="relative overflow-hidden rounded-[2rem] shadow-lift ring-1 ring-white/20">
+              <img src={media.heroTeam} alt="Life Care medical team in a modern hospital" width={1600} height={1200} className="h-[280px] w-full object-cover sm:h-[380px] lg:h-[520px]" />
               <div className="absolute inset-0 bg-gradient-to-tr from-[oklch(0.15_0.03_230/0.55)] via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-4 flex items-center gap-3 animate-float">
@@ -290,17 +290,17 @@ function Home() {
               <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/80">Still have questions?</div>
               <h3 className="mt-2 font-display text-3xl md:text-4xl font-semibold leading-tight">Talk to our care team today</h3>
               <p className="mt-3 text-white/85 max-w-xl">Call us, message on WhatsApp, or schedule a visit — our reception replies within the hour during working times.</p>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href="tel:+918147360437"
-                   className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[color:var(--teal)] shadow-soft hover:bg-white/95">
+                   className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[color:var(--teal)] shadow-soft hover:bg-white/95 sm:w-auto">
                   <Phone className="h-4 w-4" /> Call +91 81473 60437
                 </a>
                 <a href="https://wa.me/918147360437" target="_blank" rel="noopener"
-                   className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95">
+                   className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95 sm:w-auto">
                   <MessageCircle className="h-4 w-4" /> WhatsApp us
                 </a>
                 <button onClick={() => openContactChoice("appointment")}
-                   className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/20">
+                   className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/20 sm:w-auto">
                   <Calendar className="h-4 w-4" /> Schedule an appointment
                 </button>
               </div>

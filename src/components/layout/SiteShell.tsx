@@ -15,7 +15,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <Header />
-      <main className={`flex-1 ${tone}`}>{children}</main>
+      <main className={`flex-1 overflow-x-hidden ${tone}`}>{children}</main>
       <Footer />
     </div>
   );

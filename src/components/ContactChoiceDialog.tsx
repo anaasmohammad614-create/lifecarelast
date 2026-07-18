@@ -3,17 +3,19 @@ import { MessageCircle, Phone, X } from "lucide-react";
 
 export type ContactPurpose = "appointment" | "pharmacy";
 
-const NUMBERS: Record<ContactPurpose, { label: string; phone: string; wa: string; note: string }> = {
+const NUMBERS: Record<ContactPurpose, { label: string; phone: string; wa: string; businessWa: string; note: string }> = {
   appointment: {
     label: "Book an Appointment",
     phone: "+918147360437",
     wa: "918147360437",
+    businessWa: "918147360437",
     note: "Talk to our reception to book your consultation.",
   },
   pharmacy: {
     label: "Order Medicines",
     phone: "+918722703415",
     wa: "918722703415",
+    businessWa: "918722703415",
     note: "Send your prescription or place an order with our pharmacy.",
   },
 };
@@ -37,6 +39,8 @@ export function ContactChoiceDialog() {
   if (!purpose) return null;
   const info = NUMBERS[purpose];
   const close = () => setPurpose(null);
+  const normalWhatsAppUrl = `https://wa.me/${info.wa}`;
+  const businessWhatsAppUrl = `https://wa.me/${info.businessWa}`;
 
   return (
     <div className="fixed inset-0 z-[100] grid place-items-center bg-black/50 backdrop-blur-sm p-4" onClick={close}>
@@ -51,23 +55,35 @@ export function ContactChoiceDialog() {
         <h3 className="mt-1 font-display text-2xl font-semibold text-slate-900">{info.label}</h3>
         <p className="mt-2 text-sm text-slate-600">{info.note}</p>
         <p className="mt-1 text-sm font-semibold text-slate-900">{info.phone}</p>
+        <p className="mt-3 rounded-2xl bg-slate-50 p-3 text-sm text-slate-600">
+          Choose the chat option that suits your preferred app.
+        </p>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+        <div className="mt-6 grid gap-3">
           <a
-            href={`https://wa.me/${info.wa}`}
+            href={normalWhatsAppUrl}
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             onClick={close}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white hover:opacity-95"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:opacity-95"
           >
-            <MessageCircle className="h-4 w-4" /> WhatsApp
+            <MessageCircle className="h-4 w-4" /> Open WhatsApp
+          </a>
+          <a
+            href={businessWhatsAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={close}
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[color:var(--teal)] px-4 py-3 text-sm font-semibold text-white transition hover:opacity-95"
+          >
+            <MessageCircle className="h-4 w-4" /> Open WhatsApp Business
           </a>
           <a
             href={`tel:${info.phone}`}
             onClick={close}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--teal)] px-4 py-3 text-sm font-semibold text-white hover:opacity-95"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
           >
-            <Phone className="h-4 w-4" /> Call now
+            <Phone className="h-4 w-4" /> Call clinic
           </a>
         </div>
       </div>
