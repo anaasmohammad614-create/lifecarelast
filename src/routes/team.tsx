@@ -19,10 +19,10 @@ export const Route = createFileRoute("/team")({
 });
 
 export const TEAM = [
-  { role: "Chairman", name: "Zulman Saeed", img: chairman },
-  { role: "Managing Director", name: "Mansoor Ahmad", img: md },
-  { role: "CEO", name: "T.K Muhammad Safeem", img: ceo },
   { role: "Chairman", name: "Muzammil Abdul Khader", img: director },
+  { role: "Chairman", name: "Zulman Saeed", img: chairman },
+  { role: "CEO", name: "T.K Muhammad Safeem", img: ceo },
+  { role: "Managing Director", name: "Mansoor Ahmad", img: md },
 ];
 
 function TeamPage() {

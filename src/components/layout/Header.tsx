@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Phone, Calendar, User as UserIcon } from "lucide-react";
+import { Menu, X, Phone, Calendar, MessageCircle, User as UserIcon } from "lucide-react";
 import { useSession, useIsAdmin } from "@/lib/auth-hooks";
 import { supabase } from "@/integrations/supabase/client";
 import logoUrl from "@/assets/lifecare-logo-v2.png";
@@ -93,6 +93,13 @@ export function Header() {
               Sign in
             </Link>
           )}
+          <button
+            type="button"
+            onClick={() => openContactChoice("pharmacy")}
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-3.5 py-2 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[color:var(--teal)] whitespace-nowrap"
+          >
+            <MessageCircle className="h-4 w-4" /> Order Medicine
+          </button>
           <button
             type="button"
             onClick={() => openContactChoice("appointment")}
