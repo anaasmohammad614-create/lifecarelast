@@ -111,7 +111,7 @@ function Home() {
 
           <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="relative mx-auto w-full max-w-2xl lg:max-w-none">
             <div className="relative overflow-hidden rounded-[2rem] shadow-lift ring-1 ring-white/20">
-              <img src={media.heroTeam} alt="Life Care medical team in a modern hospital" width={1600} height={1200} className="h-[280px] w-full object-cover sm:h-[380px] lg:h-[520px]" />
+              <img src="/lifecare-hero.jpg" alt="Life Care storefront" width={1600} height={1200} className="h-[280px] w-full object-cover sm:h-[380px] lg:h-[520px]" />
               <div className="absolute inset-0 bg-gradient-to-tr from-[oklch(0.15_0.03_230/0.55)] via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-4 flex items-center gap-3 animate-float">
