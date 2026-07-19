@@ -44,6 +44,8 @@ const deptMap: Record<string, string> = {
 
 // Real named doctor portraits. Keys are lowercased for lenient matching.
 const namedDoctorPhotos: Record<string, string> = {
+  "dr. mohd. aquib shakeel": doctorMale,
+  "dr. niyaf n.a.": doctorFemale,
   "dr. deepalakshmi tanthry": drDeepalakshmiTanthry,
   "dr. varsha shetty": drVarshaShetty,
   "dr. sukaniya v.": drSukaniyaV,
