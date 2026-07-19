@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Phone, Calendar, MessageCircle, User as UserIcon } from "lucide-react";
+import { Menu, X, Calendar, MessageCircle, User as UserIcon } from "lucide-react";
 import { useSession, useIsAdmin } from "@/lib/auth-hooks";
 import { supabase } from "@/integrations/supabase/client";
 import logoUrl from "@/assets/lifecare-logo-v2.png";
@@ -47,10 +47,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-[color:var(--teal)] text-white border-b border-white/10 shadow-soft">
-      <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4">
-        <Link to="/" onClick={handleLogoClick} className="flex items-center gap-2 group">
-          <div className="flex h-11 items-center justify-center rounded-lg bg-white px-2 py-1">
-            <img src={logoUrl} alt="Life Care Polyclinic & Day Care Centre" className="h-9 w-auto object-contain" />
+      <div className="mx-auto flex min-h-16 max-w-7xl items-center gap-2 px-4 py-2 sm:gap-3 lg:gap-4">
+        <Link to="/" onClick={handleLogoClick} className="group flex shrink-0 items-center">
+          <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white px-1.5 py-1 shadow-sm sm:h-13 sm:w-13">
+            <img src={logoUrl} alt="Life Care Polyclinic & Day Care Centre" className="h-8 w-auto max-w-[110px] object-contain sm:h-9 md:h-10" />
           </div>
         </Link>
 
@@ -69,10 +69,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2">
-          <a href="tel:+911234567890" className="hidden md:inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm text-white/90 hover:bg-white hover:text-[color:var(--teal)] transition-colors">
-            <Phone className="h-4 w-4" /> +91 81473 60437
-          </a>
+        <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
           {user ? (
             <>
               {isAdmin && (
@@ -96,14 +93,14 @@ export function Header() {
           <button
             type="button"
             onClick={() => openContactChoice("pharmacy")}
-            className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-3.5 py-2 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[color:var(--teal)] whitespace-nowrap"
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-2.5 py-2 text-xs font-medium text-white transition-colors hover:bg-white hover:text-[color:var(--teal)] whitespace-nowrap sm:px-3.5 sm:text-sm"
           >
             <MessageCircle className="h-4 w-4" /> Order Medicine
           </button>
           <button
             type="button"
             onClick={() => openContactChoice("appointment")}
-            className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-medium text-[color:var(--teal)] border border-white transition-colors hover:bg-[color:var(--teal)] hover:text-white"
+            className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-2 text-xs font-medium text-[color:var(--teal)] border border-white transition-colors hover:bg-[color:var(--teal)] hover:text-white sm:px-4 sm:text-sm"
           >
             <Calendar className="h-4 w-4" /> Book
           </button>
