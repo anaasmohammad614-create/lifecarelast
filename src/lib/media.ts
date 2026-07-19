@@ -4,8 +4,6 @@ import doctorFemale from "@/assets/doctor-female.jpg";
 import doctorMale from "@/assets/doctor-male.jpg";
 import drDeepalakshmiTanthry from "@/assets/doctor-deepalakshmi-tanthry.jpg";
 import drVarshaShetty from "@/assets/doctor-varsha-shetty.jpg";
-import drAquibShakeel from "@/assets/doctor-aquib-shakeel.jpg";
-import drNiyafNA from "@/assets/doctor-niyaf-na.jpg";
 import drSukaniyaV from "@/assets/doctor-sukaniya-v.jpg";
 import drPradyumnaBhandary from "@/assets/doctor-pradyumna-bhandary.jpg";
 import drSagarBallal from "@/assets/doctor-sagar-ballal.jpg";
@@ -48,8 +46,6 @@ const deptMap: Record<string, string> = {
 const namedDoctorPhotos: Record<string, string> = {
   "dr. deepalakshmi tanthry": drDeepalakshmiTanthry,
   "dr. varsha shetty": drVarshaShetty,
-  "dr. mohd. aquib shakeel": drAquibShakeel,
-  "dr. niyaf n.a.": drNiyafNA,
   "dr. sukaniya v.": drSukaniyaV,
   "dr. pradyumna r. bhandary": drPradyumnaBhandary,
   "dr. sagar ballal": drSagarBallal,
