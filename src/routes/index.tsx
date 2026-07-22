@@ -256,28 +256,65 @@ function Home() {
         </div>
       </section>
 
-      {/* SEO CONTENT */}
-      <section className="mx-auto max-w-5xl px-4 py-16">
-        <div className="rounded-3xl border border-border bg-card p-8 md:p-12 shadow-soft">
-          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Why Life Care</div>
-          <h2 className="mt-2 font-display text-3xl md:text-4xl font-semibold">The best polyclinic in Surathkal for families and professionals</h2>
-          <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              Looking for the <strong>best polyclinic in Surathkal</strong> or an <strong>affordable diagnostic lab near me</strong>? Life Care Medical Polyclinic and Laboratory brings together experienced doctors, an advanced in-house pathology lab, a licensed pharmacy and compassionate patient care — all in one modern facility.
-            </p>
-            <p>
-              Our <strong>multi-specialty clinic in Surathkal</strong> covers general medicine, cardiology, pediatrics, gynecology, orthopedics, dermatology, ENT, neurology and dental care. Patients from Mangalore, Mulki, Katipalla, Kulai, NITK campus and nearby areas trust Life Care for accurate diagnostics, transparent pricing and same-day appointments.
-            </p>
-            <p>
-              Our NABL-standard <strong>diagnostic laboratory near Surathkal</strong> delivers reliable results for blood tests, thyroid, diabetes (HbA1c), lipid, liver &amp; kidney function, vitamin D, CBC, urine analysis, COVID-19, dengue and typhoid. Reports are typically ready the same day and shared via email or WhatsApp. We also provide <strong>home sample collection in Surathkal and Mangalore</strong>.
-            </p>
-            <p>
-              The <strong>in-house pharmacy</strong> stocks authentic medicines at fair prices, with free home delivery on orders above ₹499 within city limits. Upload your prescription on WhatsApp and we'll take care of the rest — including refill reminders for chronic-care patients.
-            </p>
-          </div>
-        </div>
-      </section>
+     {/* SEO CONTENT */}
+<section className="mx-auto max-w-5xl px-4 py-16">
+  <div className="rounded-3xl border border-border bg-card p-8 md:p-12 shadow-soft">
+    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+      Why Choose Life Care
+    </div>
 
+    <h2 className="mt-2 font-display text-3xl md:text-4xl font-semibold">
+      Best Polyclinic, Diagnostic Laboratory & Health Checkup Centre in Surathkal, Mangalore
+    </h2>
+
+    <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+
+      <p>
+        Looking for the <strong>best polyclinic in Surathkal</strong> or a
+        <strong> trusted diagnostic laboratory near Mangalore</strong>?
+        <strong> Life Care Polyclinic & Day Care Centre</strong> is your
+        one-stop destination for quality healthcare, advanced laboratory
+        services, experienced specialist doctors, preventive health checkups,
+        physiotherapy, and compassionate patient care under one roof.
+      </p>
+
+      <p>
+        Our <strong>multi-specialty clinic in Surathkal</strong> provides expert
+        consultations in <strong>General Medicine, Pediatrics, Gynecology,
+        Orthopedics, ENT, Dermatology, Neurosurgery</strong>, along with
+        professional nursing care, ECG, nebulization, dressing, first aid,
+        physiotherapy, Hijama cupping therapy, and day care services. We are
+        committed to delivering affordable, accessible, and patient-focused
+        healthcare for individuals and families across Surathkal, Mangalore,
+        Kulai, Katipalla, Mulki, NITK, and nearby regions. :contentReference[oaicite:2]{index=2}
+      </p>
+
+      <p>
+        Our <strong>computerized diagnostic laboratory</strong> offers accurate
+        and timely testing, including <strong>Complete Blood Count (CBC), Liver
+        Function Tests, Kidney Function Tests, Lipid Profile, Thyroid Profile,
+        Diabetes Screening (HbA1c), ECG, Electrolytes, Iron Profile, Vitamin
+        Tests, Dengue, Widal, Malaria, Urine Analysis</strong>, and many other
+        diagnostic investigations. We also provide <strong>free home sample
+        collection</strong>, making healthcare more convenient for patients
+        across Surathkal and Mangalore. :contentReference[oaicite:3]{index=3}
+      </p>
+
+      <p>
+        Life Care also offers <strong>affordable preventive health checkup
+        packages</strong>, including <strong>Mini Health Checkup, Executive
+        Health Checkup, Diabetic Profile, Fever Package, and Women's Wellness
+        (PCOD) Package</strong>, helping individuals detect health conditions
+        early and maintain long-term wellness. With experienced doctors,
+        advanced medical facilities, transparent pricing, and a commitment to
+        quality healthcare, <strong>Life Care Polyclinic & Day Care Centre</strong>
+        continues to be one of the most trusted healthcare providers in
+        Surathkal and Mangalore. :contentReference[oaicite:4]{index=4}
+      </p>
+
+    </div>
+  </div>
+</section>
 
       {/* FAQ */}
       <Section eyebrow="FAQs" title="Frequently asked questions" subtitle="Everything you need to know before your visit to Life Care Medical Polyclinic.">
