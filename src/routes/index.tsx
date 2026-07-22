@@ -277,8 +277,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-
       {/* FAQ */}
       <Section eyebrow="FAQs" title="Frequently asked questions" subtitle="Everything you need to know before your visit to Life Care Medical Polyclinic.">
         <FaqList />
