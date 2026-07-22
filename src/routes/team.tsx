@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { PageHero } from "./doctors";
+import { SITE_URL } from "@/lib/site";
 import chairman from "@/assets/chairmen.jpg";
 import director from "@/assets/chairmen_1.jpg";
 import md from "@/assets/managing_director.jpg";
@@ -31,7 +32,7 @@ function TeamPage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Life Care Medical Polyclinic & Day Care Centre",
-    url: "https://lifecarepolyclinic.com",
+    url: SITE_URL,
     founder: [
       {
         "@type": "Person",

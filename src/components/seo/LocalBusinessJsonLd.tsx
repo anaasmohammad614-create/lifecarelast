@@ -1,7 +1,10 @@
+import { SITE_URL } from "@/lib/site";
+
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["MedicalClinic", "MedicalBusiness"],
   name: "Life Care Medical Polyclinic & Day Care Centre",
+  url: SITE_URL,
   description:
     "Multi-specialty clinic and computerized diagnostic laboratory in Surathkal, Mangalore, offering consultations, routine tests, preventive health checkups, physiotherapy, and home blood sample collection.",
   telephone: "+91 81473 60437",

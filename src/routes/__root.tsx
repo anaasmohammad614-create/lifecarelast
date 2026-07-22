@@ -15,6 +15,7 @@ import { Toaster } from "sonner";
 import { StethoscopeCursor } from "@/components/StethoscopeCursor";
 import { ContactChoiceDialog } from "@/components/ContactChoiceDialog";
 import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
+import { SITE_URL } from "@/lib/site";
 
 function NotFoundComponent() {
   return (
@@ -67,13 +68,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Life Care Medical Polyclinic and Laboratory — Trusted Healthcare" },
       { property: "og:description", content: "Trusted doctors, advanced diagnostics, laboratory services, pharmacy and compassionate healthcare under one roof. Book an appointment online." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: SITE_URL },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Life Care Medical Polyclinic and Laboratory — Trusted Healthcare" },
       { name: "twitter:description", content: "Trusted doctors, advanced diagnostics, laboratory services, pharmacy and compassionate healthcare under one roof. Book an appointment online." },
+      { name: "twitter:url", content: SITE_URL },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/353080f6-cb07-420d-b466-dc368a8051eb/id-preview-731aebe5--f20390b6-d6c8-4f6a-8033-4e1e1c6b7e57.lovable.app-1783037809920.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/353080f6-cb07-420d-b466-dc368a8051eb/id-preview-731aebe5--f20390b6-d6c8-4f6a-8033-4e1e1c6b7e57.lovable.app-1783037809920.png" },
     ],
     links: [
+      { rel: "canonical", href: SITE_URL },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
