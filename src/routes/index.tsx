@@ -260,19 +260,19 @@ function Home() {
       <section className="mx-auto max-w-5xl px-4 py-16">
         <div className="rounded-3xl border border-border bg-card p-8 md:p-12 shadow-soft">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Why Life Care</div>
-          <h2 className="mt-2 font-display text-3xl md:text-4xl font-semibold">The best polyclinic in Surathkal for families and professionals</h2>
+          <h2 className="mt-2 font-display text-3xl md:text-4xl font-semibold">The Best Polyclinic &amp; Diagnostic Laboratory in Surathkal for Quality Healthcare</h2>
           <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Looking for the <strong>best polyclinic in Surathkal</strong> or an <strong>affordable diagnostic lab near me</strong>? Life Care Medical Polyclinic and Laboratory brings together experienced doctors, an advanced in-house pathology lab, a licensed pharmacy and compassionate patient care — all in one modern facility.
+              Looking for the <strong>best polyclinic in Surathkal</strong> or a <strong>trusted diagnostic laboratory near Mangalore</strong>? <strong>Life Care Polyclinic &amp; Day Care Centre</strong> provides comprehensive healthcare services with experienced specialist doctors, advanced computerized laboratory facilities, preventive health checkups, physiotherapy, and compassionate patient care—all under one roof.
             </p>
             <p>
-              Our <strong>multi-specialty clinic in Surathkal</strong> covers general medicine, cardiology, pediatrics, gynecology, orthopedics, dermatology, ENT, neurology and dental care. Patients from Mangalore, Mulki, Katipalla, Kulai, NITK campus and nearby areas trust Life Care for accurate diagnostics, transparent pricing and same-day appointments.
+              Our <strong>multi-specialty clinic in Surathkal</strong> offers expert consultations in <strong>General Medicine, Pediatrics, Gynecology, Orthopedics, ENT, Dermatology, and Neurosurgery</strong>. We also provide nursing care, ECG, nebulization, dressing, first aid, day care services, physiotherapy, and Hijama cupping therapy. Patients from Surathkal, Mangalore, Kulai, Katipalla, Mulki, NITK, and surrounding areas trust Life Care for quality treatment, affordable consultation, and personalized medical care.
             </p>
             <p>
-              Our NABL-standard <strong>diagnostic laboratory near Surathkal</strong> delivers reliable results for blood tests, thyroid, diabetes (HbA1c), lipid, liver &amp; kidney function, vitamin D, CBC, urine analysis, COVID-19, dengue and typhoid. Reports are typically ready the same day and shared via email or WhatsApp. We also provide <strong>home sample collection in Surathkal and Mangalore</strong>.
+              Our <strong>computerized diagnostic laboratory</strong> delivers accurate and timely results for a wide range of medical tests, including <strong>CBC, Blood Sugar, HbA1c, Lipid Profile, Liver Function Test, Kidney Function Test, Thyroid Profile, Iron Profile, Vitamin Tests, ECG, Urine Analysis, Dengue, Widal, Malaria, and other routine investigations</strong>. We also provide <strong>free home blood sample collection in Surathkal and Mangalore</strong>, making healthcare more convenient for patients.
             </p>
             <p>
-              The <strong>in-house pharmacy</strong> stocks authentic medicines at fair prices, with free home delivery on orders above ₹499 within city limits. Upload your prescription on WhatsApp and we'll take care of the rest — including refill reminders for chronic-care patients.
+              Life Care offers <strong>affordable health checkup packages</strong> including <strong>Mini Health Checkup, Executive Health Checkup, Diabetic Profile, Fever Package, and Women's Wellness (PCOD) Package</strong>. With experienced doctors, modern diagnostic facilities, transparent pricing, and patient-focused healthcare, Life Care Polyclinic &amp; Day Care Centre is committed to helping individuals and families achieve better health through trusted, accessible, and high-quality medical services.
             </p>
           </div>
         </div>
