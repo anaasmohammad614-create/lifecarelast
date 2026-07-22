@@ -53,7 +53,7 @@ function Contact() {
         <div className="rounded-3xl border border-border bg-card p-8 shadow-soft space-y-4 text-sm">
           <InfoRow icon={MapPin} title="Address" value="Master Complex, Near MJM Hall, Chokkabettu, Surathkal, Mangalore - 575 014" />
           <InfoRow icon={Phone} title="Appointments" value="+91 81473 60437" />
-          <InfoRow icon={Phone} title="Pharmacy" value="+91 87227 03415" />
+          <InfoRow icon={Phone} title="Pharmacy" value="+91 96326 16501" />
           <InfoRow icon={Mail} title="Email" value="lifecarepolyclinic415@gmail.com" />
           <InfoRow icon={Clock} title="Hours" value="Mon–Sat: 6:30 am – 8:30 pm · Sun: 6:30 am – 1:00 pm" />
           <div className="rounded-2xl bg-[color:var(--teal)]/10 text-[color:var(--teal)] px-4 py-3 text-sm font-semibold">

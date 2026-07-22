@@ -13,9 +13,9 @@ const NUMBERS: Record<ContactPurpose, { label: string; phone: string; wa: string
   },
   pharmacy: {
     label: "Order Medicines",
-    phone: "+918722703415",
-    wa: "918722703415",
-    businessWa: "918722703415",
+    phone: "+919632616501",
+    wa: "919632616501",
+    businessWa: "919632616501",
     note: "Send your prescription or place an order with our pharmacy.",
   },
 };
@@ -84,7 +84,7 @@ export function ContactChoiceDialog() {
             onClick={close}
             className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
           >
-            <Phone className="h-4 w-4" /> Call clinic
+            <Phone className="h-4 w-4" /> Call {purpose === "pharmacy" ? "pharmacy" : "clinic"}
           </a>
         </div>
       </div>

@@ -44,7 +44,7 @@ export function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-white/85">
             <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /> Master Complex, Near MJM Hall, Chokkabettu, Surathkal, Mangalore - 575 014</li>
             <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /> Appointments: +91 81473 60437</li>
-            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /> Pharmacy: +91 87227 03415</li>
+            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /> Pharmacy: +91 96326 16501</li>
             <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /> lifecarepolyclinic415@gmail.com</li>
             <li className="flex gap-2"><Clock className="h-4 w-4 mt-0.5 shrink-0" /> Mon–Sat: 6:30 am – 8:30 pm · Sun: 6:30 am – 1:00 pm</li>
             <li className="mt-1 rounded-lg bg-white/10 px-3 py-2 text-xs font-semibold text-white">✓ Free home sample collection available</li>
