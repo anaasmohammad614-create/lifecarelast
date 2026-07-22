@@ -13,8 +13,8 @@ export const Route = createFileRoute("/book-appointment")({
   component: Book,
   head: () => ({
     meta: [
-      { title: "Book Appointment — Life Care Medical Polyclinic" },
-      { name: "description", content: "Book an in-person or online consultation with a Life Care doctor. Choose your specialist, date and time." },
+      { title: "Book a Doctor Consultation in Surathkal | Life Care" },
+      { name: "description", content: "Book a consultation with a Life Care doctor in Surathkal. Choose a specialty, preferred date and time for patient-focused medical care." },
     ],
   }),
 });

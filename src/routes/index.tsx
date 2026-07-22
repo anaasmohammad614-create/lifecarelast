@@ -17,8 +17,8 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Life Care Medical Polyclinic and Laboratory — Advanced Healthcare" },
-      { name: "description", content: "Trusted doctors, advanced diagnostics, laboratory, pharmacy and online consultations. Book an appointment in seconds." },
+      { title: "Best Polyclinic & Diagnostic Laboratory in Surathkal | Life Care" },
+      { name: "description", content: "Life Care Medical Polyclinic & Day Care Centre in Surathkal offers specialist consultations, computerized lab tests, health checkups, physiotherapy and home blood sample collection." },
     ],
   }),
 });

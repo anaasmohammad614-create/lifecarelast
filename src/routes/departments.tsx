@@ -11,8 +11,8 @@ export const Route = createFileRoute("/departments")({
   component: DepartmentsPage,
   head: () => ({
     meta: [
-      { title: "Departments — Life Care Medical Polyclinic" },
-      { name: "description", content: "Specialist departments including cardiology, pediatrics, gynecology, dermatology, orthopedics, ENT, and diagnostics." },
+      { title: "Specialist Doctors & Departments in Surathkal | Life Care" },
+      { name: "description", content: "Consult General Medicine, Pediatrics, Gynecology, Orthopedics, ENT, Dermatology and Neurosurgery specialists at Life Care Polyclinic in Surathkal." },
       { property: "og:title", content: "Departments — Life Care Medical" },
       { property: "og:description", content: "Every major specialty under one roof." },
     ],
@@ -84,4 +84,3 @@ function DepartmentsPage() {
     </SiteShell>
   );
 }
-

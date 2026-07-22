@@ -10,7 +10,7 @@ import { toast } from "sonner";
 
 export const Route = createFileRoute("/portal")({
   component: Portal,
-  head: () => ({ meta: [{ title: "Patient Portal — Life Care Medical" }] }),
+  head: () => ({ meta: [{ title: "Patient Portal — Life Care Medical" }, { name: "robots", content: "noindex, nofollow" }] }),
 });
 
 function Portal() {

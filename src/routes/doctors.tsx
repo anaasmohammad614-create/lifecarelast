@@ -10,8 +10,8 @@ export const Route = createFileRoute("/doctors")({
   component: DoctorsPage,
   head: () => ({
     meta: [
-      { title: "Our Doctors — Life Care Medical Polyclinic" },
-      { name: "description", content: "Meet our team of experienced doctors across specialties. Book online with the right specialist for your needs." },
+      { title: "Doctors in Surathkal | Life Care Medical Polyclinic" },
+      { name: "description", content: "Meet Life Care's specialist doctors in Surathkal and book a consultation for general medicine, child health, women's health, orthopedics, ENT, dermatology and more." },
       { property: "og:title", content: "Our Doctors — Life Care Medical" },
       { property: "og:description", content: "Experienced doctors across every major specialty at Life Care." },
     ],

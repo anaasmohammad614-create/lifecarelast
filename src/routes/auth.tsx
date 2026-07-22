@@ -9,7 +9,7 @@ import { HeartPulse } from "lucide-react";
 
 export const Route = createFileRoute("/auth")({
   component: Auth,
-  head: () => ({ meta: [{ title: "Sign in — Life Care Medical" }] }),
+  head: () => ({ meta: [{ title: "Sign in — Life Care Medical" }, { name: "robots", content: "noindex, nofollow" }] }),
 });
 
 const schema = z.object({

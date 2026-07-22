@@ -9,8 +9,8 @@ export const Route = createFileRoute("/laboratory")({
   component: Lab,
   head: () => ({
     meta: [
-      { title: "Diagnostic Laboratory — Life Care Medical Polyclinic" },
-      { name: "description", content: "Full-service pathology lab: blood work, hormone panels, cardiac markers, hematology, and rapid reports." },
+      { title: "Diagnostic Laboratory & Blood Tests in Surathkal | Life Care" },
+      { name: "description", content: "Computerized diagnostic laboratory in Surathkal for CBC, HbA1c, thyroid, lipid, liver and kidney tests, ECG, urine analysis and free home blood sample collection." },
       { property: "og:title", content: "Laboratory Services — Life Care Medical" },
       { property: "og:description", content: "Accredited diagnostic laboratory with rapid, reliable results." },
       { property: "og:image", content: media.laboratory },

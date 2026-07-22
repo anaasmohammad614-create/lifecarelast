@@ -14,6 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Toaster } from "sonner";
 import { StethoscopeCursor } from "@/components/StethoscopeCursor";
 import { ContactChoiceDialog } from "@/components/ContactChoiceDialog";
+import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
 
 function NotFoundComponent() {
   return (
@@ -103,6 +104,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
+      <LocalBusinessJsonLd />
       <Toaster position="top-center" richColors />
       <StethoscopeCursor />
       <ContactChoiceDialog />

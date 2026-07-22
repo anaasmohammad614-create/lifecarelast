@@ -9,8 +9,8 @@ export const Route = createFileRoute("/pharmacy")({
   component: Pharmacy,
   head: () => ({
     meta: [
-      { title: "In-house Pharmacy — Life Care Medical Polyclinic" },
-      { name: "description", content: "Authentic medicines, prescription refills, home delivery and insurance-friendly pricing." },
+      { title: "Pharmacy in Surathkal | Life Care Medical Polyclinic" },
+      { name: "description", content: "Order prescription medicines from Life Care Pharmacy in Surathkal. Pharmacy hours are 5:30 am to 12:00 midnight; call or WhatsApp +91 96326 16501." },
       { property: "og:title", content: "Pharmacy — Life Care Medical" },
       { property: "og:description", content: "Authentic medicines with home delivery, refill reminders and expert pharmacists." },
       { property: "og:image", content: media.pharmacy },

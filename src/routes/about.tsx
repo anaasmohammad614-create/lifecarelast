@@ -7,8 +7,8 @@ export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({
     meta: [
-      { title: "About Us — Life Care Medical Polyclinic and Laboratory" },
-      { name: "description", content: "Learn about Life Care — our doctors, values, and commitment to accessible, compassionate healthcare." },
+      { title: "About Life Care Polyclinic & Day Care Centre | Surathkal" },
+      { name: "description", content: "Learn about Life Care Medical Polyclinic & Day Care Centre, a patient-focused clinic and diagnostic laboratory serving Surathkal, Mangalore and nearby areas." },
       { property: "og:title", content: "About Life Care Medical" },
       { property: "og:description", content: "A modern polyclinic built around trust, expertise and compassion." },
     ],

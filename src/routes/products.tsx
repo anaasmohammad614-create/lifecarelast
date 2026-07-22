@@ -8,8 +8,8 @@ export const Route = createFileRoute("/products")({
   component: ProductsPage,
   head: () => ({
     meta: [
-      { title: "Our Products — Life Care Medical Polyclinic and Laboratory" },
-      { name: "description", content: "Medicines, diagnostic panels, health packages and wellness products offered by Life Care Polyclinic and Laboratory." },
+      { title: "Health Checkup Packages & Pharmacy Services | Life Care Surathkal" },
+      { name: "description", content: "Explore health checkup packages, diagnostic test panels, home sample collection and pharmacy services at Life Care Medical Polyclinic in Surathkal." },
       { property: "og:title", content: "Our Products — Life Care Medical" },
       { property: "og:description", content: "Explore medicines, lab panels and health packages available at Life Care." },
     ],

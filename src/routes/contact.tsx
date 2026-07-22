@@ -12,7 +12,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Life Care Medical Polyclinic and Laboratory" },
-      { name: "description", content: "Reach Life Care Medical Polyclinic. Call, WhatsApp or send us a message — we usually reply within an hour." },
+      { name: "description", content: "Contact Life Care Medical Polyclinic & Day Care Centre in Surathkal for appointments, laboratory tests, home blood sample collection and pharmacy support." },
       { property: "og:title", content: "Contact Life Care Medical" },
       { property: "og:description", content: "Get in touch with our reception team." },
     ],
