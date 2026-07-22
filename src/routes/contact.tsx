@@ -11,10 +11,11 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
   head: () => ({
     meta: [
-      { title: "Contact — Life Care Medical Polyclinic and Laboratory" },
+      { title: "Contact Life Care Medical Polyclinic & Day Care Centre | Surathkal" },
       { name: "description", content: "Contact Life Care Medical Polyclinic & Day Care Centre in Surathkal for appointments, laboratory tests, home blood sample collection and pharmacy support." },
+      { name: "keywords", content: "clinic in Surathkal, medical clinic near me, diagnostic centre near me, pathology lab near me, doctor consultation near me" },
       { property: "og:title", content: "Contact Life Care Medical" },
-      { property: "og:description", content: "Get in touch with our reception team." },
+      { property: "og:description", content: "Get in touch with our reception team for consultations, lab work and home sample collection." },
     ],
   }),
 });
@@ -49,6 +50,13 @@ function Contact() {
   return (
     <SiteShell>
       <PageHero eyebrow="Contact" title="We'd love to hear from you" subtitle="Book, ask a question or share feedback — our reception replies within the hour during working times." />
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <div className="rounded-3xl border border-border bg-card p-8 shadow-soft">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Visit or call</div>
+          <h2 className="mt-2 font-display text-3xl font-semibold">A local healthcare centre in Surathkal for consultations, blood tests and routine care</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">Whether you are searching for a <strong>clinic in Surathkal</strong>, a <strong>medical clinic near me</strong>, a <strong>diagnostic centre near me</strong> or a <strong>pathology lab near me</strong>, our team is ready to help with appointments, home sample collection and follow-up care. We serve patients from Surathkal, Chokkabettu, Mangalore, Kulai, Katipalla, Mulki and nearby localities.</p>
+        </div>
+      </section>
       <section className="mx-auto max-w-7xl px-4 pb-24 grid gap-8 md:grid-cols-2">
         <div className="rounded-3xl border border-border bg-card p-8 shadow-soft space-y-4 text-sm">
           <InfoRow icon={MapPin} title="Address" value="Master Complex, Near MJM Hall, Chokkabettu, Surathkal, Mangalore - 575 014" />

@@ -14,7 +14,7 @@ export function Footer() {
             <img src={logoUrl} alt="Life Care Polyclinic & Day Care Centre" className="h-12 w-auto object-contain" />
           </div>
           <p className="mt-4 text-sm text-white/80 max-w-xs">
-            Trusted doctors, advanced diagnostics, pharmacy and compassionate healthcare under one roof.
+            Trusted doctor consultations, blood tests, ECG services, physiotherapy, health checkups and home sample collection for families in Surathkal, Mangalore and nearby areas.
           </p>
         </div>
 
