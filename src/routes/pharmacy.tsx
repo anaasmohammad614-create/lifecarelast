@@ -21,7 +21,7 @@ export const Route = createFileRoute("/pharmacy")({
 const features = [
   { icon: ShieldCheck, title: "100% Authentic", desc: "Sourced directly from licensed manufacturers." },
   { icon: Truck, title: "Home delivery", desc: "Free delivery on orders above ₹499 within city limits." },
-  { icon: Clock, title: "24×7 emergency", desc: "Emergency medicines dispensed round the clock." },
+  { icon: Clock, title: "Pharmacy hours", desc: "Open daily from 5:30 am to 12:00 midnight." },
   { icon: Pill, title: "Refill reminders", desc: "Automatic reminders for chronic prescriptions." },
 ];
 
