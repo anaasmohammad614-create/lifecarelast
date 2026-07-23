@@ -36,6 +36,10 @@ export function Footer() {
             <li><Link to="/about" className={linkCls}>About Us</Link></li>
             <li><Link to="/contact" className={linkCls}>Contact</Link></li>
             <li><Link to="/auth" className={linkCls}>Patient Portal</Link></li>
+            <li><Link to="/privacy-policy" className={linkCls}>Privacy Policy</Link></li>
+            <li><Link to="/terms-and-conditions" className={linkCls}>Terms & Conditions</Link></li>
+            <li><Link to="/disclaimer" className={linkCls}>Disclaimer</Link></li>
+            <li><Link to="/sitemap" className={linkCls}>Sitemap</Link></li>
           </ul>
         </div>
 

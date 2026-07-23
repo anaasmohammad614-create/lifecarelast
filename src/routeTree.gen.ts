@@ -9,12 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as TeamRouteImport } from './routes/team'
+import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as ProductsRouteImport } from './routes/products'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PortalRouteImport } from './routes/portal'
 import { Route as PharmacyRouteImport } from './routes/pharmacy'
 import { Route as LaboratoryRouteImport } from './routes/laboratory'
 import { Route as DoctorsRouteImport } from './routes/doctors'
+import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DepartmentsRouteImport } from './routes/departments'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ChairmanZulmanSaeedRouteImport } from './routes/chairman-zulman-saeed'
@@ -26,14 +30,29 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
+  id: '/terms-and-conditions',
+  path: '/terms-and-conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TeamRoute = TeamRouteImport.update({
   id: '/team',
   path: '/team',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SitemapRoute = SitemapRouteImport.update({
+  id: '/sitemap',
+  path: '/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PortalRoute = PortalRouteImport.update({
@@ -54,6 +73,11 @@ const LaboratoryRoute = LaboratoryRouteImport.update({
 const DoctorsRoute = DoctorsRouteImport.update({
   id: '/doctors',
   path: '/doctors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisclaimerRoute = DisclaimerRouteImport.update({
+  id: '/disclaimer',
+  path: '/disclaimer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DepartmentsRoute = DepartmentsRouteImport.update({
@@ -119,12 +143,16 @@ export interface FileRoutesByFullPath {
   '/chairman-zulman-saeed': typeof ChairmanZulmanSaeedRoute
   '/contact': typeof ContactRoute
   '/departments': typeof DepartmentsRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/doctors': typeof DoctorsRoute
   '/laboratory': typeof LaboratoryRoute
   '/pharmacy': typeof PharmacyRoute
   '/portal': typeof PortalRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/products': typeof ProductsRoute
+  '/sitemap': typeof SitemapRoute
   '/team': typeof TeamRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -137,12 +165,16 @@ export interface FileRoutesByTo {
   '/chairman-zulman-saeed': typeof ChairmanZulmanSaeedRoute
   '/contact': typeof ContactRoute
   '/departments': typeof DepartmentsRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/doctors': typeof DoctorsRoute
   '/laboratory': typeof LaboratoryRoute
   '/pharmacy': typeof PharmacyRoute
   '/portal': typeof PortalRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/products': typeof ProductsRoute
+  '/sitemap': typeof SitemapRoute
   '/team': typeof TeamRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -156,12 +188,16 @@ export interface FileRoutesById {
   '/chairman-zulman-saeed': typeof ChairmanZulmanSaeedRoute
   '/contact': typeof ContactRoute
   '/departments': typeof DepartmentsRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/doctors': typeof DoctorsRoute
   '/laboratory': typeof LaboratoryRoute
   '/pharmacy': typeof PharmacyRoute
   '/portal': typeof PortalRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/products': typeof ProductsRoute
+  '/sitemap': typeof SitemapRoute
   '/team': typeof TeamRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -176,12 +212,16 @@ export interface FileRouteTypes {
     | '/chairman-zulman-saeed'
     | '/contact'
     | '/departments'
+    | '/disclaimer'
     | '/doctors'
     | '/laboratory'
     | '/pharmacy'
     | '/portal'
+    | '/privacy-policy'
     | '/products'
+    | '/sitemap'
     | '/team'
+    | '/terms-and-conditions'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -194,12 +234,16 @@ export interface FileRouteTypes {
     | '/chairman-zulman-saeed'
     | '/contact'
     | '/departments'
+    | '/disclaimer'
     | '/doctors'
     | '/laboratory'
     | '/pharmacy'
     | '/portal'
+    | '/privacy-policy'
     | '/products'
+    | '/sitemap'
     | '/team'
+    | '/terms-and-conditions'
   id:
     | '__root__'
     | '/'
@@ -212,12 +256,16 @@ export interface FileRouteTypes {
     | '/chairman-zulman-saeed'
     | '/contact'
     | '/departments'
+    | '/disclaimer'
     | '/doctors'
     | '/laboratory'
     | '/pharmacy'
     | '/portal'
+    | '/privacy-policy'
     | '/products'
+    | '/sitemap'
     | '/team'
+    | '/terms-and-conditions'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -231,16 +279,27 @@ export interface RootRouteChildren {
   ChairmanZulmanSaeedRoute: typeof ChairmanZulmanSaeedRoute
   ContactRoute: typeof ContactRoute
   DepartmentsRoute: typeof DepartmentsRoute
+  DisclaimerRoute: typeof DisclaimerRoute
   DoctorsRoute: typeof DoctorsRoute
   LaboratoryRoute: typeof LaboratoryRoute
   PharmacyRoute: typeof PharmacyRoute
   PortalRoute: typeof PortalRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ProductsRoute: typeof ProductsRoute
+  SitemapRoute: typeof SitemapRoute
   TeamRoute: typeof TeamRoute
+  TermsAndConditionsRoute: typeof TermsAndConditionsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms-and-conditions': {
+      id: '/terms-and-conditions'
+      path: '/terms-and-conditions'
+      fullPath: '/terms-and-conditions'
+      preLoaderRoute: typeof TermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/team': {
       id: '/team'
       path: '/team'
@@ -248,11 +307,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TeamRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sitemap': {
+      id: '/sitemap'
+      path: '/sitemap'
+      fullPath: '/sitemap'
+      preLoaderRoute: typeof SitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products': {
       id: '/products'
       path: '/products'
       fullPath: '/products'
       preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/portal': {
@@ -281,6 +354,13 @@ declare module '@tanstack/react-router' {
       path: '/doctors'
       fullPath: '/doctors'
       preLoaderRoute: typeof DoctorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/disclaimer': {
+      id: '/disclaimer'
+      path: '/disclaimer'
+      fullPath: '/disclaimer'
+      preLoaderRoute: typeof DisclaimerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/departments': {
@@ -367,12 +447,16 @@ const rootRouteChildren: RootRouteChildren = {
   ChairmanZulmanSaeedRoute: ChairmanZulmanSaeedRoute,
   ContactRoute: ContactRoute,
   DepartmentsRoute: DepartmentsRoute,
+  DisclaimerRoute: DisclaimerRoute,
   DoctorsRoute: DoctorsRoute,
   LaboratoryRoute: LaboratoryRoute,
   PharmacyRoute: PharmacyRoute,
   PortalRoute: PortalRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
   ProductsRoute: ProductsRoute,
+  SitemapRoute: SitemapRoute,
   TeamRoute: TeamRoute,
+  TermsAndConditionsRoute: TermsAndConditionsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
