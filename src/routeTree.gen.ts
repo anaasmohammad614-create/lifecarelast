@@ -17,6 +17,9 @@ import { Route as LaboratoryRouteImport } from './routes/laboratory'
 import { Route as DoctorsRouteImport } from './routes/doctors'
 import { Route as DepartmentsRouteImport } from './routes/departments'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ChairmanZulmanSaeedRouteImport } from './routes/chairman-zulman-saeed'
+import { Route as ChairmanMuzammilAbdulKhaderRouteImport } from './routes/chairman-muzammil-abdul-khader'
+import { Route as CeoTKMuhammadSafeemRouteImport } from './routes/ceo-t-k-muhammad-safeem'
 import { Route as BookAppointmentRouteImport } from './routes/book-appointment'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
@@ -63,6 +66,22 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChairmanZulmanSaeedRoute = ChairmanZulmanSaeedRouteImport.update({
+  id: '/chairman-zulman-saeed',
+  path: '/chairman-zulman-saeed',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChairmanMuzammilAbdulKhaderRoute =
+  ChairmanMuzammilAbdulKhaderRouteImport.update({
+    id: '/chairman-muzammil-abdul-khader',
+    path: '/chairman-muzammil-abdul-khader',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CeoTKMuhammadSafeemRoute = CeoTKMuhammadSafeemRouteImport.update({
+  id: '/ceo-t-k-muhammad-safeem',
+  path: '/ceo-t-k-muhammad-safeem',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BookAppointmentRoute = BookAppointmentRouteImport.update({
   id: '/book-appointment',
   path: '/book-appointment',
@@ -95,6 +114,9 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRoute
   '/auth': typeof AuthRoute
   '/book-appointment': typeof BookAppointmentRoute
+  '/ceo-t-k-muhammad-safeem': typeof CeoTKMuhammadSafeemRoute
+  '/chairman-muzammil-abdul-khader': typeof ChairmanMuzammilAbdulKhaderRoute
+  '/chairman-zulman-saeed': typeof ChairmanZulmanSaeedRoute
   '/contact': typeof ContactRoute
   '/departments': typeof DepartmentsRoute
   '/doctors': typeof DoctorsRoute
@@ -110,6 +132,9 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminRoute
   '/auth': typeof AuthRoute
   '/book-appointment': typeof BookAppointmentRoute
+  '/ceo-t-k-muhammad-safeem': typeof CeoTKMuhammadSafeemRoute
+  '/chairman-muzammil-abdul-khader': typeof ChairmanMuzammilAbdulKhaderRoute
+  '/chairman-zulman-saeed': typeof ChairmanZulmanSaeedRoute
   '/contact': typeof ContactRoute
   '/departments': typeof DepartmentsRoute
   '/doctors': typeof DoctorsRoute
@@ -126,6 +151,9 @@ export interface FileRoutesById {
   '/admin': typeof AdminRoute
   '/auth': typeof AuthRoute
   '/book-appointment': typeof BookAppointmentRoute
+  '/ceo-t-k-muhammad-safeem': typeof CeoTKMuhammadSafeemRoute
+  '/chairman-muzammil-abdul-khader': typeof ChairmanMuzammilAbdulKhaderRoute
+  '/chairman-zulman-saeed': typeof ChairmanZulmanSaeedRoute
   '/contact': typeof ContactRoute
   '/departments': typeof DepartmentsRoute
   '/doctors': typeof DoctorsRoute
@@ -143,6 +171,9 @@ export interface FileRouteTypes {
     | '/admin'
     | '/auth'
     | '/book-appointment'
+    | '/ceo-t-k-muhammad-safeem'
+    | '/chairman-muzammil-abdul-khader'
+    | '/chairman-zulman-saeed'
     | '/contact'
     | '/departments'
     | '/doctors'
@@ -158,6 +189,9 @@ export interface FileRouteTypes {
     | '/admin'
     | '/auth'
     | '/book-appointment'
+    | '/ceo-t-k-muhammad-safeem'
+    | '/chairman-muzammil-abdul-khader'
+    | '/chairman-zulman-saeed'
     | '/contact'
     | '/departments'
     | '/doctors'
@@ -173,6 +207,9 @@ export interface FileRouteTypes {
     | '/admin'
     | '/auth'
     | '/book-appointment'
+    | '/ceo-t-k-muhammad-safeem'
+    | '/chairman-muzammil-abdul-khader'
+    | '/chairman-zulman-saeed'
     | '/contact'
     | '/departments'
     | '/doctors'
@@ -189,6 +226,9 @@ export interface RootRouteChildren {
   AdminRoute: typeof AdminRoute
   AuthRoute: typeof AuthRoute
   BookAppointmentRoute: typeof BookAppointmentRoute
+  CeoTKMuhammadSafeemRoute: typeof CeoTKMuhammadSafeemRoute
+  ChairmanMuzammilAbdulKhaderRoute: typeof ChairmanMuzammilAbdulKhaderRoute
+  ChairmanZulmanSaeedRoute: typeof ChairmanZulmanSaeedRoute
   ContactRoute: typeof ContactRoute
   DepartmentsRoute: typeof DepartmentsRoute
   DoctorsRoute: typeof DoctorsRoute
@@ -257,6 +297,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/chairman-zulman-saeed': {
+      id: '/chairman-zulman-saeed'
+      path: '/chairman-zulman-saeed'
+      fullPath: '/chairman-zulman-saeed'
+      preLoaderRoute: typeof ChairmanZulmanSaeedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/chairman-muzammil-abdul-khader': {
+      id: '/chairman-muzammil-abdul-khader'
+      path: '/chairman-muzammil-abdul-khader'
+      fullPath: '/chairman-muzammil-abdul-khader'
+      preLoaderRoute: typeof ChairmanMuzammilAbdulKhaderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ceo-t-k-muhammad-safeem': {
+      id: '/ceo-t-k-muhammad-safeem'
+      path: '/ceo-t-k-muhammad-safeem'
+      fullPath: '/ceo-t-k-muhammad-safeem'
+      preLoaderRoute: typeof CeoTKMuhammadSafeemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/book-appointment': {
       id: '/book-appointment'
       path: '/book-appointment'
@@ -301,6 +362,9 @@ const rootRouteChildren: RootRouteChildren = {
   AdminRoute: AdminRoute,
   AuthRoute: AuthRoute,
   BookAppointmentRoute: BookAppointmentRoute,
+  CeoTKMuhammadSafeemRoute: CeoTKMuhammadSafeemRoute,
+  ChairmanMuzammilAbdulKhaderRoute: ChairmanMuzammilAbdulKhaderRoute,
+  ChairmanZulmanSaeedRoute: ChairmanZulmanSaeedRoute,
   ContactRoute: ContactRoute,
   DepartmentsRoute: DepartmentsRoute,
   DoctorsRoute: DoctorsRoute,

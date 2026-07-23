@@ -63,6 +63,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Life Care Medical Polyclinic and Laboratory — Trusted Healthcare" },
       { name: "description", content: "Trusted doctors, advanced diagnostics, laboratory services, pharmacy and compassionate healthcare under one roof. Book an appointment online." },
+      { name: "google-site-verification", content: "FQCotnIBhSOquK-k2Ag8qD3KPqtvofjHpRUsRL7Ufww" },
       { name: "author", content: "Life Care Medical Polyclinic" },
       { name: "theme-color", content: "#0f3d4a" },
       { property: "og:title", content: "Life Care Medical Polyclinic and Laboratory — Trusted Healthcare" },
