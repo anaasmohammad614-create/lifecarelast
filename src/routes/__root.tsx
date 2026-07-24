@@ -14,6 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Toaster } from "sonner";
 import { StethoscopeCursor } from "@/components/StethoscopeCursor";
 import { ContactChoiceDialog } from "@/components/ContactChoiceDialog";
+import logoUrl from "@/assets/lifecare-logo-v2.png";
 import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
 import { SITE_URL } from "@/lib/site";
 
@@ -81,10 +82,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "canonical", href: SITE_URL },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-      { rel: "icon", href: "/assets/lifecare-logo-v2.png", sizes: "48x48", type: "image/png" },
-      { rel: "icon", href: "/assets/lifecare-logo-v2.png", sizes: "32x32", type: "image/png" },
-      { rel: "icon", href: "/assets/lifecare-logo-v2.png", sizes: "16x16", type: "image/png" },
-      { rel: "apple-touch-icon", href: "/assets/lifecare-logo-v2.png", sizes: "180x180" },
+      { rel: "icon", href: logoUrl, sizes: "48x48", type: "image/png" },
+      { rel: "icon", href: logoUrl, sizes: "32x32", type: "image/png" },
+      { rel: "icon", href: logoUrl, sizes: "16x16", type: "image/png" },
+      { rel: "apple-touch-icon", href: logoUrl, sizes: "180x180" },
       { rel: "manifest", href: "/manifest.json" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
