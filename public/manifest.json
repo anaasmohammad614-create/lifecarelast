@@ -1,0 +1,20 @@
+{
+  "name": "Life Care Medical Polyclinic and Laboratory",
+  "short_name": "Life Care",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f3d4a",
+  "icons": [
+    {
+      "src": "/assets/lifecare-logo-v2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/lifecare-logo-v2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
